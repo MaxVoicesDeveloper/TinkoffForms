@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tinkoff</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+
+<div class="content">
+	<div class="form-back">
+		<div class="form">
+			<div class="base">
+				<div class="head">
+					<span>Выберите параметры страховки</span>
+					<span>Шаг 1 из 3</span>
+				</div>
+				<div class="selects">
+					<input type="text" id="search" name="country" placeholder="Укажите страну поездки"/ onchange='prov(this.value)' required onfocus="menun()" onblur="menun1(); prov(this.value)" >
+					<div class="buttonselect">
+						<svg xmlns="http://www.w3.org/2000/svg" focusable="false" viewBox="0 0 24 24"><path d="M7.707 10.293a1 1 0 0 0-1.414 1.414l4.294 4.294c.781.781 2.043.783 2.826 0l4.294-4.294a1 1 0 0 0-1.414-1.414L12 14.586l-4.293-4.293z" fill="currentColor" stroke="none"></path></svg>
+					</div>
+				</div>
+				<span id="error">Укажите одну или несколько стран</span>
+					<div class="scroll-b">
+						<div class="main-scroll">
+						<div class="scroll-block">
+						<span><label for="radio-2"><input type="checkbox" class="custom-chekbox" name="">Шенген</label></span>
+						<span><label for="radio-2"><input type="checkbox" class="custom-chekbox" id="radio-2">Весь мир</label></span>
+						<span><label for="radio-2"><input type="checkbox" class="custom-chekbox" name="">Таиланд</label></span>
+						<span><label for="radio-2"><input type="checkbox" class="custom-chekbox" name="">Соеденённые Штаты Америки</label></span>
+						<span><label for="radio-2"><input type="checkbox" class="custom-chekbox" name="">Шенген</label></span>
+						<span><label for="radio-2"><input type="checkbox" class="custom-chekbox" id="radio-2">Весь мир</label></span>
+						<span><label for="radio-2"><input type="checkbox" class="custom-chekbox" name="">Таиланд</label></span>
+						<span><label for="radio-2"><input type="checkbox" class="custom-chekbox" name="">Соеденённые Штаты Америки</label></span>
+						<span><label for="radio-2"><input type="checkbox" class="custom-chekbox" name="">Шенген</label></span>
+						<span><label for="radio-2"><input type="checkbox" class="custom-chekbox" id="radio-2">Весь мир</label></span>
+						<span><label for="radio-2"><input type="checkbox" class="custom-chekbox" name="">Таиланд</label></span>
+						<span><label for="radio-2"><input type="checkbox" class="custom-chekbox" name="">Соеденённые Штаты Америки</label></span>
+
+					</div>
+					</div>
+					</div>
+					<div class="citys">
+						<span>Россия</span>
+						<span>Шенген</span>
+						<span>Таиланд</span>
+						<span>Турция</span>
+					</div>
+					<div class="tworadio">
+						<div class="tworadio1">
+						<label for="tworadio1">	<input type="checkbox" name="radio2" class="custom-chekbox" id="tworadio1" name="tworadio1">Годовой полис
+
+							<div class="whyb">
+							<div class="blockw">
+								<span>
+									Подходит для тех кто планирует<br>путешествие на несколько поездок<br>в выбранные страны на протяжении<br> всего года
+								</span>
+						</div>
+						<div class="cont">
+							<a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M12 19a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm1-6c0-.053-.035-.015.25-.163l.222-.116c.996-.534 1.528-1.262 1.528-2.578C15 8.422 13.673 7 12 7c-1.616 0-3 1.024-3 2.5a1 1 0 0 0 2 0c0-.219.38-.5 1-.5.536 0 1 .497 1 1.143 0 .499-.075.602-.472.815l-.203.106C11.45 11.52 11 12.014 11 13a1 1 0 0 0 2 0zm-1 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path></svg></a>
+						</div>
+					</div>
+
+
+
+				</label>
+						</div>
+
+						<div class="tworadio2">
+							<label for="tworadio2"><input type="checkbox" name="radio2" class="custom-chekbox" id="tworadio2">Уже путешествую
+								<div class="whyb">
+									<div class="blockw">
+								<span>Активируйте эту опцию, если уже<br> находитесь в стране, для которой<br> покупаете страховку. Иначе полис <br> не подействует при страховом случае <br> Защита по опции «Уже путешествую» <br> начнёт действовать с 04.11.2022</span>
+						</div>
+
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M12 19a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm1-6c0-.053-.035-.015.25-.163l.222-.116c.996-.534 1.528-1.262 1.528-2.578C15 8.422 13.673 7 12 7c-1.616 0-3 1.024-3 2.5a1 1 0 0 0 2 0c0-.219.38-.5 1-.5.536 0 1 .497 1 1.143 0 .499-.075.602-.472.815l-.203.106C11.45 11.52 11 12.014 11 13a1 1 0 0 0 2 0zm-1 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path></svg>
+							</div>
+						</label>
+						</div>
+					</div>
+
+
+					<div class="selects1">
+					<input type="text" id="search" name="country" placeholder="Выберите дату путешествия: туда и обратно"/ onchange='prov(this.value)' required onfocus="menun()" onblur="menun1(); prov(this.value)" >
+					<div class="buttonselect1">
+						<svg xmlns="http://www.w3.org/2000/svg" focusable="false" viewBox="0 0 24 24"><path d="M19 10H5v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-8zm-3-5V4a1 1 0 0 1 2 0v1a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3V4a1 1 0 1 1 2 0v1h8zm-9 7h2v2H7v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm0 3h2v2h-2v-2zm-4 0h2v2h-2v-2zm-4 0h2v2H7v-2z" fill="currentColor" stroke="none"></path></svg>
+
+					</div>
+				</div>
+				<div class="look-calendar">
+<table id="calendar">
+  <thead>
+  <tr>
+  <td><b><ion-icon name="chevron-back-outline"></ion-icon></b>
+  <td colspan="5">
+  <td><b><ion-icon name="chevron-forward-outline"></ion-icon></b>
+  <tr class="dn"><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+  </thead>
+  <tbody></tbody>
+</table>
+</div>
+
+
+
+			<div class="blockti">
+				<div class="ti">
+					<input type="text" id="problem" name="country"/ onchange='prov(this.value)' required onfocus="menun()" onblur="menun1(); prov(this.value)" >
+					<div class="textw">
+						<span>Валюта</span>
+						<span>Евро</span>
+					</div>
+					<div class="buttonti">
+						<svg xmlns="http://www.w3.org/2000/svg" focusable="false" viewBox="0 0 24 24"><path d="M7.707 10.293a1 1 0 0 0-1.414 1.414l4.294 4.294c.781.781 2.043.783 2.826 0l4.294-4.294a1 1 0 0 0-1.414-1.414L12 14.586l-4.293-4.293z" fill="currentColor" stroke="none"></path></svg>
+					</div>
+				</div>
+				<div class="ti">
+					<input type="text" id="" name="country"/ onchange='prov(this.value)' required onfocus="menun()" onblur="menun1(); prov(this.value)" >
+					<div class="textw">
+						<span>Страховая сумма</span>
+						<span>30 000</span>
+					</div>
+					<div class="buttonti">
+						<svg xmlns="http://www.w3.org/2000/svg" focusable="false" viewBox="0 0 24 24"><path d="M7.707 10.293a1 1 0 0 0-1.414 1.414l4.294 4.294c.781.781 2.043.783 2.826 0l4.294-4.294a1 1 0 0 0-1.414-1.414L12 14.586l-4.293-4.293z" fill="currentColor" stroke="none"></path></svg>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="bott">
+					<input type="text" id="search" name="country"/ onchange='prov(this.value)' required onfocus="menun()" onblur="menun1(); prov(this.value)" >
+					<div class="textw">
+						<span>Страховая сумма</span>
+						<span>30 000</span>
+					</div>
+					<div class="buttonbott">
+						<svg xmlns="http://www.w3.org/2000/svg" focusable="false" viewBox="0 0 24 24"><path d="M7.707 10.293a1 1 0 0 0-1.414 1.414l4.294 4.294c.781.781 2.043.783 2.826 0l4.294-4.294a1 1 0 0 0-1.414-1.414L12 14.586l-4.293-4.293z" fill="currentColor" stroke="none"></path></svg>
+					</div>
+				</div>
+				<div class="abo">
+					<span><a href="">Подробнее</a></span>
+				</div>
+				<div class="botthr"></div>
+
+
+				<div class="notnext">
+					<div class="notradio">
+							<label for="notradio"><input type="checkbox" name="notradio" class="custom-chekbox" id="notradio">Я принимаю условия страхования<br> и передачи информации
+						</label>
+						</div>
+						<button>Далее</button>
+				</div>
+
+
+			</div>
+
+			<div class="notation">
+				<div class="notation-content">
+					<div class="nothead">
+					Укажите страну и даты поездки, чтобы<br> узнать цену
+				</div>
+				<hr>
+				<div class="notbody">
+					<p>В страховку включено:</p>
+					<span>30 000 € (без франшизы),<br> спокойный отдых</span>
+					<p>Амбулаторное лечение, неотложное<br> посещение врача, стоматология,<br> расходы за лекарства по рецепту</p>
+					<p><a href="#">Полное описание покрытия</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+				</div>
+</div>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
